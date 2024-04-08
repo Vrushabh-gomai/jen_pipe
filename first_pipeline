@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-               https://github.com/Vrushabh-gomai/jen_pipe.git
+               git branch: 'main', url: 'https://github.com/Vrushabh-gomai/jen_pipe.git'
                 echo 'pull'
             }
         }
