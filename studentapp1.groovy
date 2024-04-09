@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                // Assuming you want to clone the repository using git
                 git 'https://github.com/chetansomkuwar254/studentapp.ui.git'
                 echo 'Done pulling code'
             }
@@ -16,19 +15,16 @@ pipeline {
         }
         stage('quality-test') {
             steps {
-                // Execute your quality tests here
                 echo 'Quality tests completed'
             }
         }
         stage('test') {
             steps {
-                // Execute your tests here
                 echo 'Tests completed'
             }
         }
         stage('deploy') {
             steps {
-                // Assuming you have a deployment step here, e.g., deploying to a server
                 echo 'Deployment completed'
             }
         }
