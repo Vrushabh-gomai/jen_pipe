@@ -3,29 +3,33 @@ pipeline {
     stages {
         stage('pull') {
             steps {
-                https://github.com/chetansomkuwar254/studentapp.ui.git
-                echo 'done with this'
+                // Assuming you want to clone the repository using git
+                git 'https://github.com/chetansomkuwar254/studentapp.ui.git'
+                echo 'Done pulling code'
             }
         }
         stage('build') {
             steps {
                 sh '/opt/apache-maven-3.9.3/bin/mvn clean package'
-                echo 'build done'
+                echo 'Build done'
             }
         }
         stage('quality-test') {
             steps {
-                echo 'quality-test'
+                // Execute your quality tests here
+                echo 'Quality tests completed'
             }
         }
         stage('test') {
             steps {
-                echo 'test done'
+                // Execute your tests here
+                echo 'Tests completed'
             }
         }
         stage('deploy') {
             steps {
-                echo 'deploy done'
+                // Assuming you have a deployment step here, e.g., deploying to a server
+                echo 'Deployment completed'
             }
         }
     }
