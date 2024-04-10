@@ -9,10 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                sh '''
-                    echo 'Building project...'
-                    /opt/apache-maven-3.9.3/bin/mvn clean package
-                '''
+                sh '/opt/apache-maven-3.9.3/bin/mvn clean package'
                 echo 'Build done'
             }
         }
