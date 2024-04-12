@@ -16,6 +16,10 @@ pipeline {
         }
         stage('Test') {
             steps {
+                - Pipeline syntax
+                - Sample step: withSonarQubeEnv: Prepare sonarqube Enviorment
+                - Add token
+                - Generate the pipeline script
                 echo 'Here we are testing '
             }
         }
