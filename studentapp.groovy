@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                https://github.com/chetansomkuwar254/studentapp.ui.git
+                git 'https://github.com/chetansomkuwar254/studentapp.ui.git'
                 echo 'done isntall'
             }
         }
